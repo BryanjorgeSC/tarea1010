@@ -1,0 +1,77 @@
+:root {
+    --color-principal: #0066ff;
+    --color-secundario: #ff8f00;
+    --fondo: #f4f4f4;
+    --oscuro: #222;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--fondo);
+    color: var(--oscuro);
+    margin: 0;
+}
+
+header {
+    background: var(--color-principal);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--color-secundario);
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+}
+
+.btn {
+    background: var(--color-principal);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: var(--color-secundario);
+}
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+article {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background: var(--oscuro);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
